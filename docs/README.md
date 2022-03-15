@@ -51,9 +51,9 @@ The ZI command executed will be equivalent to:
 
 ```zsh
 zi lucid reset \
- atclone"[[ -z ${commands[dircolors]} ]] && local P=g
-    \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
-    \${P}dircolors -b LS_COLORS > clrs.zsh" \
+ atclone"[[ -z \${commands[dircolors]} ]] && local P=g
+    \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS
+    \${P}dircolors -b LS_COLORS >! clrs.zsh" \
  atpull'%atclone' pick"clrs.zsh" nocompile'!' \
  atload'zstyle ":completion:*:default" list-colors "${(s.:.)LS_COLORS}";' for \
     trapd00r/LS_COLORS
@@ -68,9 +68,9 @@ The ZI command executed will be equivalent to:
 
 ```zsh
 zi lucid reset \
- atclone"[[ -z ${commands[dircolors]} ]] && local P=g
-    \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
-    \${P}dircolors -b LS_COLORS > clrs.zsh" \
+ atclone"[[ -z \${commands[dircolors]} ]] && local P=g
+    \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS
+    \${P}dircolors -b LS_COLORS >! clrs.zsh" \
  atpull'%atclone' pick"clrs.zsh" nocompile'!' for \
     trapd00r/LS_COLORS
 ```
@@ -86,8 +86,8 @@ The ZI command executed will be equivalent to:
 
 ```zsh
 zi lucid \
- atclone"[[ -z ${commands[dircolors]} ]] && local P=g
-     ${P}dircolors -b LS_COLORS > clrs.zsh" \
+ atclone"[[ -z \${commands[dircolors]} ]] && local P=g
+     \${P}dircolors -b LS_COLORS >! clrs.zsh" \
  atpull'%atclone' pick"clrs.zsh" nocompile'!' \
  atload'zstyle ":completion:*:default" list-colors "${(s.:.)LS_COLORS}";' for \
     trapd00r/LS_COLORS
