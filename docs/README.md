@@ -1,7 +1,7 @@
 <h1 align="center">
   <p><a href="https://github.com/z-shell/zi">
     <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
-    ❮ ZI ❯ Package - LS COLORS </h1></p>
+    ❮ ZI ❯ Package - LS_COLORS </p></h1>
 <h3 align="center">
 <table>
     <tr>
@@ -13,10 +13,10 @@
     </tr>
     <tr>
         <td><b>Status:</b></td>
-        <td>-</td>
-        <td>:heavy_check_mark: (default)</td>
-        <td>:x:</td>
-        <td>:x:</td>
+        <td>➖</td>
+        <td>✔️ (default)</td>
+        <td>❌</td>
+        <td>❌</td>
     </tr>
 </table>
 </h3><hr />
