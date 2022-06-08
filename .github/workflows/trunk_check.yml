@@ -1,0 +1,14 @@
+---
+name: "♻️ Trunk Check"
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  trunk-check:
+    uses: z-shell/.github/.github/workflows/trunk.yml@main
+    with:
+      arguments: --no-progress

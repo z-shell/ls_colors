@@ -1,32 +1,25 @@
-<h2 align="center">
-  <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
-  </a>
-❮ ZI ❯ Package - LS COLORS
-</h2>
-
+<h1 align="center">
+  <p><a href="https://github.com/z-shell/zi">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+    ❮ ZI ❯ Package - LS COLORS </h1></p>
 <h3 align="center">
-
-| **Package source:** | Tarball |             Git              | Node | Gem |
-| :-----------------: | :-----: | :--------------------------: | :--: | :-: |
-|     **Status:**     |    -    | :heavy_check_mark: (default) | :x:  | :x: |
-
-</h3>
-
-- [Available `pack''` invocations](#available-pack-invocations)
-- [Default Profile](#default-profile)
-- [`no-zsh-completion` Profile](#no-zsh-completion-profile)
-- [`no-dir-color-swap` Profile](#no-dir-color-swap-profile)
-
-> This repository compatible with [ZI](https://github.com/z-shell/zi)
-
-The [trapd00r/LS_COLORS](https://github.com/jhawthorn/fzy) zsh package that can use the NPM package registry to automatically:
-
-- get the plugin's Git repository OR release-package URL,
-- get the list of the recommended ices for the plugin,
-  - there can be multiple lists of ices,
-  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
-  - the ices can be selectively overridden.
+<table>
+    <tr>
+        <td><b>Package source:</b></td>
+        <td>Tarball</td>
+        <td>Git</td>
+        <td>Node</td>
+        <td>Gem</td>
+    </tr>
+    <tr>
+        <td><b>Status:</b></td>
+        <td>-</td>
+        <td>:heavy_check_mark: (default)</td>
+        <td>:x:</td>
+        <td>:x:</td>
+    </tr>
+</table>
+</h3><hr />
 
 ### Available `pack''` invocations
 
@@ -92,3 +85,15 @@ zi lucid \
  atload'zstyle ":completion:*:default" list-colors "${(s.:.)LS_COLORS}";' for \
     trapd00r/LS_COLORS
 ```
+
+---
+
+> This repository compatible with [ZI](https://github.com/z-shell/zi)
+
+The [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) zsh package that can use the NPM package registry to automatically:
+
+- get the plugin's Git repository OR release-package URL,
+- get the list of the recommended ices for the plugin,
+  - there can be multiple lists of ices,
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
