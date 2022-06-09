@@ -90,7 +90,7 @@ zi lucid \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-The [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) zsh package that can use the NPM package registry to automatically:
+The [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) zsh package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
