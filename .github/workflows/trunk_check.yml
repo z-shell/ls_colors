@@ -1,16 +1,16 @@
 ---
-name: '⭕ Trunk'
+name: "⭕ Trunk"
 on:
   push:
-    branches: ['main']
-    tags: ['v*.*.*']
+    branches: ["main"]
+    tags: ["v*.*.*"]
   pull_request:
     types: [opened, synchronize]
   workflow_dispatch: {}
 
 jobs:
   check-call:
-    name: '⚡'
+    name: "⚡"
     uses: z-shell/.github/.github/workflows/trunk.yml@main
     with:
       arguments: --no-progress
