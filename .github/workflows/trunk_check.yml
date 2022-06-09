@@ -6,11 +6,13 @@ on:
     tags: ["v*.*.*"]
   pull_request:
     types: [opened, synchronize]
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 jobs:
   check:
     name: "⚡"
     uses: z-shell/.github/.github/workflows/trunk.yml@main
+    secrets:
+      trunk-token: ${{ secrets.TRUNK_TOKEN }}
     with:
       arguments: "--no-progress"
