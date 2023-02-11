@@ -27,7 +27,7 @@
         "atpull": "%atclone",
         "pick": "clrs.zsh",
         "nocompile": "!",
-        "atload": "zstyle ':completion:*:default' list-colors \"${(s.:.)LS_COLORS}\";"
+        "atload": "zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS};"
       },
       "no-zsh-completion": {
         "git": "",
@@ -45,7 +45,7 @@
         "atpull": "%atclone",
         "pick": "clrs.zsh",
         "nocompile": "!",
-        "atload": "zstyle ':completion:*:default' list-colors \"${(s.:.)LS_COLORS}\";"
+        "atload": "zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS};"
       }
     }
   }
